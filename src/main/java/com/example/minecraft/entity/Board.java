@@ -11,30 +11,30 @@ import java.time.LocalDateTime;
 @Data
 public class Board {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idBoard;
-
-    // <<Enum 을 사용하여 타입 구별>>
-    private String type;
-
-    private String title;
-
-    private String content;
-
-    private String userId;
-
-    private LocalDateTime createTime;
-
-    private Integer likes;
-
-    private Integer counts;
-
     // @Id
     // @GeneratedValue(strategy = GenerationType.IDENTITY)
-    // private Integer id;
+    // private Integer idBoard;
+
+    // // <<Enum 을 사용하여 타입 구별>>
+    // private String type;
 
     // private String title;
-    
+
     // private String content;
+
+    // private String userId;
+
+    // private LocalDateTime createTime;
+
+    // private Integer likes;
+
+    // private Integer counts;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String title;
+    
+    private String content;
 }
