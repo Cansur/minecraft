@@ -1,5 +1,6 @@
 package com.example.minecraft.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,7 +14,7 @@ public class Board {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idBoard;
+    private Integer id;
 
     // <<Enum 을 사용하여 타입 구별>>
     private String type;
@@ -22,9 +23,9 @@ public class Board {
 
     private String content;
 
-    private String userId;
+    private String userid;
 
-    private LocalDateTime createTime;
+    private LocalDateTime createtime;
 
     private Integer likes;
 

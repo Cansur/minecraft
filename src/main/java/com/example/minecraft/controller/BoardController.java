@@ -20,10 +20,10 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @GetMapping("/api/board/list")
-    public List<Board> getBoardList(@PageableDefault(page=0,size=10,sort="id",direction = Sort.Direction.DESC) Pageable pageable) {
-        Page<Board> boards = boardService.boardList(pageable);
-        return boards.getContent();
-    }
+    // @GetMapping("/api/board/list")
+    // public List<Board> getBoardList(@PageableDefault(page=0,size=10,sort="id",direction = Sort.Direction.DESC) Pageable pageable) {
+    //     Page<Board> boards = boardService.boardList(pageable);
+    //     return boards.getContent();
+    // }
     
 }
